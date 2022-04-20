@@ -1,0 +1,47 @@
+.items{
+    float:left;
+    width: 16.6%;
+    font-size: medium;
+}
+
+.images{
+    display: inline;
+    position: relative;
+}
+
+.img{
+    padding: 1.3%;
+    
+}
+
+.overlay{
+  display: inline;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+}
+
+.desc{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.img:hover{
+    opacity: 20%;
+    cursor: pointer;
+}
+
+.images:hover .overlay {
+    opacity: 1;
+  }
