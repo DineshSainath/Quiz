@@ -1,10 +1,9 @@
 import "./Selection.css";
-import React from "react";
-import ImageList from '@mui/material/ImageList';
+import React, {useState} from "react";
 
 function Selection(){
     
-    let categories = ['Film', 'Television', 'Mathematics', 'Nature', 'Computers', 'Politics'];
+    const [category, setCategory] = useState("");
 
     let imgs = [
         {
@@ -40,20 +39,26 @@ function Selection(){
         },
     ];
 
-    function clicked(){
-        console.log("clicked");
+    function clicked(value){
+        setCategory(value); 
+        console.log("lavde");
     }
 
     return(<div>
     
+        {/* pass value as a parameter for div-onClick */}
         {imgs.map((item,index) => (
-            <div className="images">
-        <img className="img" onClick={clicked} src={item.src} alt={item.name} width="200" height="150"/>
+            <div className="images" onClick={() => clicked(item.name)} value={item.name}>
+        <img className="img" src={item.src} width="200" height="150"/>
             <div className="overlay">
                 <p className="desc"> {item.name} </p>
             </div>
         </div>
         ))}
+
+        <div>
+            <p>You selected {category}</p>
+        </div>
 
     </div>)
 }
