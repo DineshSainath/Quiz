@@ -10,14 +10,13 @@
 }
 
 .img{
-    padding: 1.3%;
-    
+    margin: 1.3%;
 }
 
 .imgSelected{
-    padding: 1.3%;
-    color: #000;
-    border: solid 2px #EC3A4B; 
+    margin: 1.3%;
+    box-shadow: rgba(113, 112, 112, 0.25) 0px 14px 28px, rgba(132, 130, 130, 0.22) 0px 10px 10px;
+    border: 2px solid rgb(52, 50, 50);
 }
 
 .overlay{
@@ -44,6 +43,11 @@
 }
 
 .images:hover .img{
+    opacity: 20%;
+    cursor: pointer;
+}
+
+.images:hover .imgSelected{
     opacity: 20%;
     cursor: pointer;
 }
