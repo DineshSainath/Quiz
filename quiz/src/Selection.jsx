@@ -41,7 +41,6 @@ function Selection(){
 
     function clicked(value){
         setCategory(value); 
-        console.log("lavde");
     }
 
     return(<div>

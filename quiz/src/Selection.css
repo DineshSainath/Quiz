@@ -43,15 +43,12 @@
     text-align: center;
 }
 
-.img:hover{
+.images:hover .img{
     opacity: 20%;
     cursor: pointer;
 }
 
-.desc:hover{
-    cursor: pointer;
-}
-
-.images:hover .overlay {
+.images:hover .overlay{
     opacity: 1;
+    cursor: pointer;
   }
