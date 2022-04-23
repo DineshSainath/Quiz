@@ -4,7 +4,7 @@ import "./Header.css";
 function Header(){
 
   return  (<header className="App-header">
-       <p>Quiz</p> 
+       <p>QUIZ</p> 
       </header>)
 
 }

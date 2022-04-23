@@ -34,7 +34,7 @@
     color: white;
     font-size: 20px;
     position: absolute;
-    top: 50%;
+    top: 50%;;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -55,4 +55,27 @@
 .images:hover .overlay{
     opacity: 1;
     cursor: pointer;
-  }
+}
+
+h2{
+    color: white;
+    font-weight: 500;
+}
+
+.selection2{
+    margin-top: 2%;
+}
+
+.difficulty{
+    float:left;
+    width: 50%;
+}
+
+.Qty{
+    float:right;
+    width: 50%;
+}
+
+.slider{
+    margin: 5%;
+}
